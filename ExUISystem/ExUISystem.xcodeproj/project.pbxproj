@@ -28,6 +28,10 @@
 		B56B67CE2B06805300F44AE9 /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67CD2B06805300F44AE9 /* Text+.swift */; };
 		B56B67D12B0680AE00F44AE9 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D02B0680AE00F44AE9 /* UIImage+.swift */; };
 		B56B67D32B06810600F44AE9 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D22B06810600F44AE9 /* Bundle+.swift */; };
+		B56B67D62B06825700F44AE9 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D52B06825700F44AE9 /* Icon.swift */; };
+		B56B67D82B06831D00F44AE9 /* EnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D72B06831D00F44AE9 /* EnvironmentKey.swift */; };
+		B56B67DA2B0683DF00F44AE9 /* IconSize+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D92B0683DF00F44AE9 /* IconSize+Constants.swift */; };
+		B56B67DC2B06843D00F44AE9 /* InformationBoxStyle+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67DB2B06843D00F44AE9 /* InformationBoxStyle+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,10 @@
 		B56B67CD2B06805300F44AE9 /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
 		B56B67D02B0680AE00F44AE9 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		B56B67D22B06810600F44AE9 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		B56B67D52B06825700F44AE9 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		B56B67D72B06831D00F44AE9 /* EnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentKey.swift; sourceTree = "<group>"; };
+		B56B67D92B0683DF00F44AE9 /* IconSize+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IconSize+Constants.swift"; sourceTree = "<group>"; };
+		B56B67DB2B06843D00F44AE9 /* InformationBoxStyle+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InformationBoxStyle+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,7 @@
 				B56B677F2B06517F00F44AE9 /* SceneDelegate.swift */,
 				B56B67812B06517F00F44AE9 /* ViewController.swift */,
 				B56B67B12B06529900F44AE9 /* LetUsGoView.swift */,
+				B56B67D72B06831D00F44AE9 /* EnvironmentKey.swift */,
 				B56B67CF2B06807300F44AE9 /* Extensions */,
 				B56B67BD2B0666C800F44AE9 /* Assets */,
 				B56B67D42B0681A800F44AE9 /* Contants */,
@@ -118,6 +127,7 @@
 			children = (
 				B56B67BE2B06732700F44AE9 /* InformationBox.swift */,
 				B56B67BB2B06608500F44AE9 /* StateButtonStyle.swift */,
+				B56B67D52B06825700F44AE9 /* Icon.swift */,
 			);
 			path = "Basic Components";
 			sourceTree = "<group>";
@@ -140,6 +150,8 @@
 				B56B67C32B067D3100F44AE9 /* ImageAsset+Constants.swift */,
 				B56B67C52B067D9100F44AE9 /* FontAsset+Constants.swift */,
 				B56B67C92B067FC100F44AE9 /* ShadowAsset+Constants.swift */,
+				B56B67D92B0683DF00F44AE9 /* IconSize+Constants.swift */,
+				B56B67DB2B06843D00F44AE9 /* InformationBoxStyle+Constants.swift */,
 			);
 			path = Contants;
 			sourceTree = "<group>";
@@ -215,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B67DA2B0683DF00F44AE9 /* IconSize+Constants.swift in Sources */,
 				B56B67CA2B067FC100F44AE9 /* ShadowAsset+Constants.swift in Sources */,
+				B56B67D82B06831D00F44AE9 /* EnvironmentKey.swift in Sources */,
 				B56B67B62B06531C00F44AE9 /* ImageAsset.swift in Sources */,
 				B56B67822B06517F00F44AE9 /* ViewController.swift in Sources */,
 				B56B67D12B0680AE00F44AE9 /* UIImage+.swift in Sources */,
@@ -223,7 +237,9 @@
 				B56B67C22B067CD300F44AE9 /* ColorAsset+Constants.swift in Sources */,
 				B56B67BC2B06608500F44AE9 /* StateButtonStyle.swift in Sources */,
 				B56B67CE2B06805300F44AE9 /* Text+.swift in Sources */,
+				B56B67DC2B06843D00F44AE9 /* InformationBoxStyle+Constants.swift in Sources */,
 				B56B67C62B067D9100F44AE9 /* FontAsset+Constants.swift in Sources */,
+				B56B67D62B06825700F44AE9 /* Icon.swift in Sources */,
 				B56B67CC2B06801D00F44AE9 /* UIFont+.swift in Sources */,
 				B56B67BA2B06603900F44AE9 /* ShadowAsset.swift in Sources */,
 				B56B67B82B065F3B00F44AE9 /* FontAsset.swift in Sources */,
