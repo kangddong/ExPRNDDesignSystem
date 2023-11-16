@@ -20,6 +20,14 @@
 		B56B67BA2B06603900F44AE9 /* ShadowAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67B92B06603900F44AE9 /* ShadowAsset.swift */; };
 		B56B67BC2B06608500F44AE9 /* StateButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67BB2B06608500F44AE9 /* StateButtonStyle.swift */; };
 		B56B67BF2B06732700F44AE9 /* InformationBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67BE2B06732700F44AE9 /* InformationBox.swift */; };
+		B56B67C22B067CD300F44AE9 /* ColorAsset+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67C12B067CD300F44AE9 /* ColorAsset+Constants.swift */; };
+		B56B67C42B067D3100F44AE9 /* ImageAsset+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67C32B067D3100F44AE9 /* ImageAsset+Constants.swift */; };
+		B56B67C62B067D9100F44AE9 /* FontAsset+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67C52B067D9100F44AE9 /* FontAsset+Constants.swift */; };
+		B56B67CA2B067FC100F44AE9 /* ShadowAsset+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67C92B067FC100F44AE9 /* ShadowAsset+Constants.swift */; };
+		B56B67CC2B06801D00F44AE9 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67CB2B06801D00F44AE9 /* UIFont+.swift */; };
+		B56B67CE2B06805300F44AE9 /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67CD2B06805300F44AE9 /* Text+.swift */; };
+		B56B67D12B0680AE00F44AE9 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D02B0680AE00F44AE9 /* UIImage+.swift */; };
+		B56B67D32B06810600F44AE9 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56B67D22B06810600F44AE9 /* Bundle+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,14 @@
 		B56B67B92B06603900F44AE9 /* ShadowAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowAsset.swift; sourceTree = "<group>"; };
 		B56B67BB2B06608500F44AE9 /* StateButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateButtonStyle.swift; sourceTree = "<group>"; };
 		B56B67BE2B06732700F44AE9 /* InformationBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationBox.swift; sourceTree = "<group>"; };
+		B56B67C12B067CD300F44AE9 /* ColorAsset+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorAsset+Constants.swift"; sourceTree = "<group>"; };
+		B56B67C32B067D3100F44AE9 /* ImageAsset+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageAsset+Constants.swift"; sourceTree = "<group>"; };
+		B56B67C52B067D9100F44AE9 /* FontAsset+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontAsset+Constants.swift"; sourceTree = "<group>"; };
+		B56B67C92B067FC100F44AE9 /* ShadowAsset+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShadowAsset+Constants.swift"; sourceTree = "<group>"; };
+		B56B67CB2B06801D00F44AE9 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		B56B67CD2B06805300F44AE9 /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
+		B56B67D02B0680AE00F44AE9 /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		B56B67D22B06810600F44AE9 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 				B56B677F2B06517F00F44AE9 /* SceneDelegate.swift */,
 				B56B67812B06517F00F44AE9 /* ViewController.swift */,
 				B56B67B12B06529900F44AE9 /* LetUsGoView.swift */,
+				B56B67CF2B06807300F44AE9 /* Extensions */,
 				B56B67C02B0676C200F44AE9 /* Basic Components */,
 				B56B67BD2B0666C800F44AE9 /* Assets */,
 				B56B67832B06517F00F44AE9 /* Main.storyboard */,
@@ -88,9 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				B56B67B32B0652F800F44AE9 /* ColorAsset.swift */,
+				B56B67C12B067CD300F44AE9 /* ColorAsset+Constants.swift */,
 				B56B67B52B06531C00F44AE9 /* ImageAsset.swift */,
+				B56B67C32B067D3100F44AE9 /* ImageAsset+Constants.swift */,
 				B56B67B72B065F3B00F44AE9 /* FontAsset.swift */,
+				B56B67C52B067D9100F44AE9 /* FontAsset+Constants.swift */,
 				B56B67B92B06603900F44AE9 /* ShadowAsset.swift */,
+				B56B67C92B067FC100F44AE9 /* ShadowAsset+Constants.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -102,6 +123,17 @@
 				B56B67BB2B06608500F44AE9 /* StateButtonStyle.swift */,
 			);
 			path = "Basic Components";
+			sourceTree = "<group>";
+		};
+		B56B67CF2B06807300F44AE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B56B67CB2B06801D00F44AE9 /* UIFont+.swift */,
+				B56B67CD2B06805300F44AE9 /* Text+.swift */,
+				B56B67D02B0680AE00F44AE9 /* UIImage+.swift */,
+				B56B67D22B06810600F44AE9 /* Bundle+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,14 +207,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56B67CA2B067FC100F44AE9 /* ShadowAsset+Constants.swift in Sources */,
 				B56B67B62B06531C00F44AE9 /* ImageAsset.swift in Sources */,
 				B56B67822B06517F00F44AE9 /* ViewController.swift in Sources */,
+				B56B67D12B0680AE00F44AE9 /* UIImage+.swift in Sources */,
 				B56B67BF2B06732700F44AE9 /* InformationBox.swift in Sources */,
+				B56B67C22B067CD300F44AE9 /* ColorAsset+Constants.swift in Sources */,
 				B56B67BC2B06608500F44AE9 /* StateButtonStyle.swift in Sources */,
+				B56B67CE2B06805300F44AE9 /* Text+.swift in Sources */,
+				B56B67C62B067D9100F44AE9 /* FontAsset+Constants.swift in Sources */,
+				B56B67CC2B06801D00F44AE9 /* UIFont+.swift in Sources */,
 				B56B67BA2B06603900F44AE9 /* ShadowAsset.swift in Sources */,
 				B56B67B82B065F3B00F44AE9 /* FontAsset.swift in Sources */,
 				B56B677E2B06517F00F44AE9 /* AppDelegate.swift in Sources */,
+				B56B67C42B067D3100F44AE9 /* ImageAsset+Constants.swift in Sources */,
 				B56B67B22B06529900F44AE9 /* LetUsGoView.swift in Sources */,
+				B56B67D32B06810600F44AE9 /* Bundle+.swift in Sources */,
 				B56B67B42B0652F800F44AE9 /* ColorAsset.swift in Sources */,
 				B56B67802B06517F00F44AE9 /* SceneDelegate.swift in Sources */,
 			);

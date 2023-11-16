@@ -37,10 +37,6 @@ extension ImageAsset {
 
 // assets 기본 구현
 extension ImageAsset.Format {
-//    static let image: ImageAsset.Format(fileExtension: "assets") {
-//        UIImage(named: $0.named, in: $0.bundle, with: nil)!
-//    }
-    
     static let image = ImageAsset.Format(fileExtension: "assets") {
         UIImage(named: $0.named, in: $0.bundle, with: nil)!
     }
@@ -52,39 +48,5 @@ extension ImageAsset.Format {
         }
         // animatedImage로 custom 된 object로 변환
         return UIImage.gif(data: gifData)
-    }
-}
-
-extension ImageAsset {
-    static let sampleImage = ImageAsset("sample_image", in: .designSystem, format: .image)
-    static let sampleAnimatedImage = ImageAsset("sample_gif", in: .designSystem, format: .gif)
-}
-
-extension UIImage {
-    enum AssetName: String{
-        case arrowUpWhite
-    }
-    
-//    static func asset(_ type: AssetName) -> ImageAsset {
-//        let imageName = type.rawValue
-//        
-//        return ImageAsset(imageName, in: .designSystem, format: .image)
-//    }
-    
-    static func asset(_ type: AssetName) -> UIImage {
-        let imageName = type.rawValue
-        
-        return UIImage(named: imageName, in: .main, with: nil)!
-    }
-    
-    static func gif(data: Data) -> UIImage {
-        return UIImage(data: data)!
-    }
-}
-
-// TODO: - Bundle Initializer
-extension Bundle {
-    static var designSystem: Bundle {
-        Bundle()
     }
 }

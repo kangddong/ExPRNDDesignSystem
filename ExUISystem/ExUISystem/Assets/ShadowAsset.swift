@@ -15,7 +15,3 @@ struct ShadowAsset {
     var blurRadius: Double
     var spread: Double
 }
-
-extension ShadowAsset {
-    static let blue32 = ShadowAsset(color: Color(.blue), opacity: 1.0, x: 0.0, y: 0.0, blurRadius: 0.0, spread: 0.0)
-}

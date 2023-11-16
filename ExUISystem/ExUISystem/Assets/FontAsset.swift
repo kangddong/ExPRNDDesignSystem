@@ -15,47 +15,26 @@ struct FontAsset {
     var size: CGFloat
     /// 행간
     var leading: Leading?
+    var leading2: Leading1?
     
+    init(_ config: FontConfig, fixedSize: CGFloat, leading: Leading? = nil, leading2: Leading1? = nil) {
+        self.config = config
+        self.size = fixedSize
+        self.leading = leading
+        self.leading2 = leading2
+    }
+    // TODO: - FontConfig
     struct FontConfig {
+        static let bold = FontConfig()
+        static let regular = FontConfig()
+    }
+    
+    // FIXME: - What choose one ?
+    enum Leading1 {
+        case lineHeight(_ height: CGFloat)
     }
     
     struct Leading {
+        static func lineHeight(_ height: CGFloat) {}
     }
 }
-
-extension FontAsset {
-    static let bold = FontAsset(config: FontConfig(), size: 10.0)
-    static let header3 = FontAsset(config: FontConfig(), size: 10.0)
-    static let body1 = FontAsset(config: FontConfig(), size: 10.0)
-}
-
-extension UIFont {
-    enum AssetName: String{
-        case body1
-        
-        var name: String {
-            switch self {
-            case .body1:
-                return "body1"
-            }
-        }
-        
-        var size: CGFloat {
-            switch self {
-            case .body1:
-                return 20.0
-            }
-        }
-    }
-    
-    static func asset(_ type: AssetName) -> UIFont {
-        return UIFont(name: type.name, size: type.size)!
-    }
-}
-
-extension Text {
-    func fontAsset(_ font: FontAsset) -> Text {
-        return self
-    }
-}
-

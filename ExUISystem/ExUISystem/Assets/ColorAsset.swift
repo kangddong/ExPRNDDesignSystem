@@ -42,7 +42,7 @@ struct ColorAsset {
         
         var rgb: UInt64 = 0
         
-        let result = Scanner(string: hexSanitized).scanHexInt64(&rgb)
+        let _ = Scanner(string: hexSanitized).scanHexInt64(&rgb)
         
         self.red = Double((rgb & 0xFF0000) >> 16) / 255.0
         self.green = Double((rgb & 0x00FF00) >> 8) / 255.0
@@ -52,14 +52,6 @@ struct ColorAsset {
     }
 }
 
-extension ColorAsset {
-    // TODO: - What is Primary? May I think Initializer
-    static let primary: ColorAsset = ColorAsset(hex: "")
-    static let successDark: ColorAsset = ColorAsset(hex: "")
-    static let warningPrimary: ColorAsset = ColorAsset(hex: "")
-    static let brandPrimary: ColorAsset = ColorAsset(hex: "")
-    static let cautionPrimary: ColorAsset = ColorAsset(hex: "")
-}
 extension ColorAsset {
     func toColor() -> Color {
         return Color(red: self.red, green: self.green, blue: self.blue)
