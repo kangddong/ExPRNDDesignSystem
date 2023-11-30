@@ -9,7 +9,7 @@ import SwiftUI
 
 // key 정의
 private struct IconTintEnvironmentKey: EnvironmentKey {
-    static let defaultValue = Color(.pink)
+    static let defaultValue = ColorAsset(named: "pink", bundle: .main, alpha: 1.0)
 }
 
 private struct IconSizeEnvironmentKey: EnvironmentKey {
@@ -22,7 +22,7 @@ private struct RenderingModeEnvironmentKey: EnvironmentKey {
 
 // value 정의
 extension EnvironmentValues {
-    var icontTint: Color {
+    var icontTint: ColorAsset {
         get { self[IconTintEnvironmentKey.self] }
         set { self[IconTintEnvironmentKey.self] = newValue }
     }
